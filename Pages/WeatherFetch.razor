@@ -1,0 +1,261 @@
+@page "/weatherfetch"
+@inject HttpClient Http
+@using WeatherApp1.Models
+
+<PageTitle>Weather Fetch</PageTitle>
+
+<h1>Current Weather</h1>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (errorMessage != null)
+{
+    <div class="alert alert-danger">
+        <h5>Error:</h5>
+        <p>@errorMessage</p>
+        
+        @if (errorMessage.Contains("CORS") || errorMessage.Contains("Failed to fetch"))
+        {
+            <div class="mt-3">
+                <p>
+                    <strong>This is likely a CORS issue.</strong> The browser is preventing direct API requests to external domains.
+                    For a real application, you would need to:
+                </p>
+                <ul>
+                    <li>Create a server-side API that proxies the requests</li>
+                    <li>Use a CORS proxy service</li>
+                    <li>Or use a weather API that allows CORS</li>
+                </ul>
+                <div class="mt-2">
+                    <button class="btn btn-primary me-2" @onclick="@RetryWithProxyService">Try with CORS Proxy</button>
+                    <button class="btn btn-secondary" @onclick="@LoadSampleData">Load Sample Data</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="mt-3">
+                <button class="btn btn-primary me-2" @onclick="@(() => FetchWeatherData("London"))">Try Again</button>
+                <button class="btn btn-secondary" @onclick="@LoadSampleData">Load Sample Data</button>
+            </div>
+        }
+    </div>
+}
+else if (weatherData != null)
+{
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4>@weatherData.Location.Name, @weatherData.Location.Country</h4>
+                        <p class="mb-0">@weatherData.Location.Localtime</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            @if (!string.IsNullOrEmpty(weatherData.Current.Condition.Icon))
+                            {
+                                <img src="@($"https:{weatherData.Current.Condition.Icon}")" alt="@weatherData.Current.Condition.Text" class="me-3" style="width: 64px; height: 64px;" />
+                            }
+                            <h3 class="mb-0">@weatherData.Current.Condition.Text</h3>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h2 class="display-4">@Math.Round(weatherData.Current.TempC)°C</h2>
+                                    <p class="text-muted">Feels like @Math.Round(weatherData.Current.FeelslikeC)°C</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <h5>Wind</h5>
+                                    <p>@Math.Round(weatherData.Current.WindKph) kph, @weatherData.Current.WindDir</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5>Humidity</h5>
+                                    <p>@weatherData.Current.Humidity%</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <h5>Pressure</h5>
+                                    <p>@Math.Round(weatherData.Current.PressureMb) mb</p>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <h5>Visibility</h5>
+                                    <p>@Math.Round(weatherData.Current.VisKm) km</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <p class="mb-0 text-muted small">Last updated: @weatherData.Current.LastUpdated</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mt-3 mt-md-0">
+                <div class="card shadow">
+                    <div class="card-header bg-secondary text-white">
+                        <h4>Search for a City</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter city name..." @bind="searchCity" @bind:event="oninput" @onkeydown="@HandleKeyDown" />
+                            <button class="btn btn-primary" @onclick="SearchCity">Search</button>
+                        </div>
+                        <div class="mt-3">
+                            <h5>Quick Search</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-outline-primary" @onclick="@(() => QuickSearch("London"))">London</button>
+                                <button class="btn btn-outline-primary" @onclick="@(() => QuickSearch("New York"))">New York</button>
+                                <button class="btn btn-outline-primary" @onclick="@(() => QuickSearch("Tokyo"))">Tokyo</button>
+                                <button class="btn btn-outline-primary" @onclick="@(() => QuickSearch("Sydney"))">Sydney</button>
+                                <button class="btn btn-outline-primary" @onclick="@(() => QuickSearch("Paris"))">Paris</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@if (weatherData != null && isDebugging)
+{
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5>Debug: Raw Weather API Data</h5>
+                <button class="btn btn-sm btn-light" @onclick="() => isDebugging = false">Hide</button>
+            </div>
+            <div class="card-body">
+                <p><strong>Temperature:</strong> @weatherData.Current.TempC°C / @weatherData.Current.TempF°F</p>
+                <p><strong>Feels Like:</strong> @weatherData.Current.FeelslikeC°C / @weatherData.Current.FeelslikeF°F</p>
+                <p><strong>Wind:</strong> @weatherData.Current.WindKph kph</p>
+                <p><strong>Pressure:</strong> @weatherData.Current.PressureMb mb</p>
+                <p><strong>Visibility:</strong> @weatherData.Current.VisKm km</p>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private WeatherResponse? weatherData;
+    private bool isLoading = true;
+    private string? errorMessage;
+    private string searchCity = string.Empty;
+    private const string apiKey = "d3b7015912d64c82af9100400250105";
+    private bool isDebugging = true; // Set to true to show debugging panel
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchWeatherData("London");
+    }
+
+    private async Task FetchWeatherData(string city)
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = null;
+            
+            // Direct API call using the configured HttpClient
+            weatherData = await Http.GetFromJsonAsync<WeatherResponse>($"current.json?key={apiKey}&q={Uri.EscapeDataString(city)}");
+            isLoading = false;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error fetching weather data: {ex.Message}";
+            isLoading = false;
+        }
+    }
+
+    private async Task SearchCity()
+    {
+        if (!string.IsNullOrWhiteSpace(searchCity))
+        {
+            await FetchWeatherData(searchCity);
+        }
+    }
+
+    private async Task QuickSearch(string city)
+    {
+        searchCity = city;
+        await FetchWeatherData(city);
+    }
+
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchCity();
+        }
+    }
+
+    private async Task RetryWithProxyService()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = null;
+            
+            // Use a CORS proxy service as a fallback
+            string city = string.IsNullOrWhiteSpace(searchCity) ? "London" : searchCity;
+            string apiUrl = $"https://api.weatherapi.com/v1/current.json?key={apiKey}&q={Uri.EscapeDataString(city)}";
+            string proxyUrl = $"https://api.allorigins.win/raw?url={Uri.EscapeDataString(apiUrl)}";
+            
+            // Make request through the CORS proxy
+            weatherData = await Http.GetFromJsonAsync<WeatherResponse>(proxyUrl);
+            isLoading = false;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error using proxy service: {ex.Message}";
+            isLoading = false;
+        }
+    }
+    
+    private void LoadSampleData()
+    {
+        // Create sample data to test display
+        weatherData = new WeatherResponse
+        {
+            Location = new Location
+            {
+                Name = "Sample City",
+                Country = "Sample Country",
+                Localtime = DateTime.Now.ToString()
+            },
+            Current = new Current
+            {
+                TempC = 23.5,
+                TempF = 74.3,
+                FeelslikeC = 25.0,
+                FeelslikeF = 77.0,
+                WindKph = 15.8,
+                WindDir = "NE",
+                Humidity = 65,
+                PressureMb = 1015.0,
+                VisKm = 10.0,
+                LastUpdated = DateTime.Now.ToString(),
+                Condition = new Condition
+                {
+                    Text = "Partly cloudy",
+                    Icon = "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                }
+            }
+        };
+        
+        isLoading = false;
+        errorMessage = null;
+    }
+} 

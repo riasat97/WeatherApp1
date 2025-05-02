@@ -1,0 +1,129 @@
+@page "/dynamicweather"
+@inject HttpClient Http
+@using WeatherApp1.Models
+@using System.Threading
+@implements IDisposable
+
+<h3>Dynamic User Data</h3>
+
+@if (isLoading)
+{
+    <div class="d-flex align-items-center">
+        <div class="spinner-border text-primary me-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <span>Loading user data (Limit: @currentLimit)...</span>
+    </div>
+}
+else if (errorMessage != null)
+{
+    <div class="alert alert-danger">
+        @errorMessage
+    </div>
+}
+@if (showCancelledAlert)
+{
+    <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+        Previous request with limit @previousLimit was cancelled!
+        <button type="button" class="btn-close" @onclick="DismissCancelledAlert" aria-label="Close"></button>
+    </div>
+}
+@if (users != null)
+{
+    <div class="mb-4">
+        <button class="btn btn-primary me-2" @onclick="FetchUsersAsync">Refresh Data (Click Rapidly to Test Cancellation)</button>
+        <span class="badge bg-secondary">Current limit: @currentLimit</span>
+    </div>
+
+    <div class="row">
+        @foreach (var user in users)
+        {
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">@user.Name</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Username:</strong> @user.Username</p>
+                        <p><strong>Email:</strong> @user.Email</p>
+                        <p><strong>Phone:</strong> @user.Phone</p>
+                        <p><strong>Website:</strong> @user.Website</p>
+                        <p><strong>Company:</strong> @user.Company.Name</p>
+                        <p><strong>Location:</strong> @user.Address.City</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<User>? users;
+    private bool isLoading = true;
+    private string? errorMessage;
+    private CancellationTokenSource? cts;
+    private int currentLimit = 5; // Default limit
+    private int previousLimit = 0; // Tracks the limit of cancelled requests
+    private Random random = new Random();
+    private bool showCancelledAlert = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FetchUsersAsync();
+    }
+
+    private async Task FetchUsersAsync()
+    {
+        try
+        {
+            // Cancel any previous request
+            if (cts != null)
+            {
+                previousLimit = currentLimit;
+                cts.Cancel();
+                cts.Dispose();
+                showCancelledAlert = true;
+            }
+
+            // Create a new cancellation token source
+            cts = new CancellationTokenSource();
+            
+            isLoading = true;
+            errorMessage = null;
+
+            // Generate a random limit between 1 and 10
+            currentLimit = random.Next(1, 11);
+            
+            // Add a small delay to better demonstrate cancellation
+            await Task.Delay(1000, cts.Token);
+
+            // Make the API request with cancellation token and limit parameter
+            string apiUrl = $"https://jsonplaceholder.typicode.com/users?_limit={currentLimit}";
+            users = await Http.GetFromJsonAsync<List<User>>(apiUrl, cts.Token);
+            
+            isLoading = false;
+        }
+        catch (OperationCanceledException)
+        {
+            // Request was canceled, no need to update UI
+            Console.WriteLine($"Request with limit {previousLimit} was canceled");
+            // We don't set isLoading = false here since a new request should be in progress
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error fetching user data: {ex.Message}";
+            isLoading = false;
+        }
+    }
+
+    private void DismissCancelledAlert()
+    {
+        showCancelledAlert = false;
+    }
+
+    public void Dispose()
+    {
+        // Clean up the cancellation token source
+        cts?.Dispose();
+    }
+} 
