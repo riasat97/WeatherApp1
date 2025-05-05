@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tGUGqLOLqi9qFjqebgbyFjZ6M0SIbyG4F4dikv9Dug4=",
+  "Hash": "4LXs70kmnmVC6O7bMDShmkBdbRrP1DXWATO48sVn1SI=",
   "Source": "WeatherApp1",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "q40vbh1idx",
-      "Integrity": "lo4q4iW6O66N/Ml/42L3jnFZ1KJ6b4E5UDxxxW2GEk0=",
+      "Fingerprint": "iexe4aeek5",
+      "Integrity": "muxN9XudP6sx/QEg2x4s9B/UQt/zjCkOv/eXzCudSGI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -4252,8 +4252,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "w6ipu5wdv8",
-      "Integrity": "qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68=",
+      "Fingerprint": "4s5r5m8rle",
+      "Integrity": "/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\WeatherApp1.pdb"
@@ -4273,8 +4273,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "89rwiyt4j9",
-      "Integrity": "/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk=",
+      "Fingerprint": "52q0w55pmj",
+      "Integrity": "7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\webcil\\WeatherApp1.wasm"
@@ -6296,7 +6296,7 @@
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.Json.wasm"
     },
     {
-      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-q40vbh1idx.gz",
+      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-iexe4aeek5.gz",
       "SourceId": "WeatherApp1",
       "SourceType": "Computed",
       "ContentRoot": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\",
@@ -6310,8 +6310,8 @@
       "RelatedAsset": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ehvxx6d765",
-      "Integrity": "okYHkQVrIx4+uiCJPO6NSw3UnhZU94dg8MWHbbGVEu0=",
+      "Fingerprint": "knrs2s1bnt",
+      "Integrity": "AH0oTZrqre0JvcBT3CTZxQ6F2Wwg6OSnEZ2yiiL2iVU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7997,12 +7997,12 @@
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Cryptography.Csp.wasm"
     },
     {
-      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-89rwiyt4j9.gz",
+      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-52q0w55pmj.gz",
       "SourceId": "WeatherApp1",
       "SourceType": "Computed",
       "ContentRoot": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/WeatherApp1#[.{fingerprint=89rwiyt4j9}]!.wasm.gz",
+      "RelativePath": "_framework/WeatherApp1#[.{fingerprint=52q0w55pmj}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8011,8 +8011,8 @@
       "RelatedAsset": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lucoym0vrs",
-      "Integrity": "827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ=",
+      "Fingerprint": "doc9f1e55s",
+      "Integrity": "kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.wasm"
@@ -8144,12 +8144,12 @@
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-w6ipu5wdv8.gz",
+      "Identity": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-4s5r5m8rle.gz",
       "SourceId": "WeatherApp1",
       "SourceType": "Computed",
       "ContentRoot": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/WeatherApp1#[.{fingerprint=w6ipu5wdv8}]!.pdb.gz",
+      "RelativePath": "_framework/WeatherApp1#[.{fingerprint=4s5r5m8rle}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8158,8 +8158,8 @@
       "RelatedAsset": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wggesq3wbw",
-      "Integrity": "IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4=",
+      "Fingerprint": "yudbgae05n",
+      "Integrity": "Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.pdb"
@@ -10705,7 +10705,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lo4q4iW6O66N/Ml/42L3jnFZ1KJ6b4E5UDxxxW2GEk0=\""
+          "Value": "\"muxN9XudP6sx/QEg2x4s9B/UQt/zjCkOv/eXzCudSGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-muxN9XudP6sx/QEg2x4s9B/UQt/zjCkOv/eXzCudSGI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-iexe4aeek5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081214976"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12312"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AH0oTZrqre0JvcBT3CTZxQ6F2Wwg6OSnEZ2yiiL2iVU=\""
         },
         {
           "Name": "Last-Modified",
@@ -10714,45 +10753,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lo4q4iW6O66N/Ml/42L3jnFZ1KJ6b4E5UDxxxW2GEk0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-q40vbh1idx.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000081234768"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12309"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"okYHkQVrIx4+uiCJPO6NSw3UnhZU94dg8MWHbbGVEu0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:28:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -10768,19 +10768,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"lo4q4iW6O66N/Ml/42L3jnFZ1KJ6b4E5UDxxxW2GEk0=\""
+          "Value": "W/\"muxN9XudP6sx/QEg2x4s9B/UQt/zjCkOv/eXzCudSGI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lo4q4iW6O66N/Ml/42L3jnFZ1KJ6b4E5UDxxxW2GEk0="
+          "Value": "sha256-muxN9XudP6sx/QEg2x4s9B/UQt/zjCkOv/eXzCudSGI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-q40vbh1idx.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\crk89246zt-iexe4aeek5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10789,7 +10789,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12309"
+          "Value": "12312"
         },
         {
           "Name": "Content-Type",
@@ -10797,11 +10797,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"okYHkQVrIx4+uiCJPO6NSw3UnhZU94dg8MWHbbGVEu0=\""
+          "Value": "\"AH0oTZrqre0JvcBT3CTZxQ6F2Wwg6OSnEZ2yiiL2iVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:28:41 GMT"
+          "Value": "Fri, 02 May 2025 08:33:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10819,7 +10819,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-okYHkQVrIx4+uiCJPO6NSw3UnhZU94dg8MWHbbGVEu0="
+          "Value": "sha256-AH0oTZrqre0JvcBT3CTZxQ6F2Wwg6OSnEZ2yiiL2iVU="
         }
       ]
     },
@@ -70263,168 +70263,7 @@
       ]
     },
     {
-      "Route": "_framework/WeatherApp1.89rwiyt4j9.wasm",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50453"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "89rwiyt4j9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WeatherApp1.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.89rwiyt4j9.wasm",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-89rwiyt4j9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000051564998"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19392"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "89rwiyt4j9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WeatherApp1.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.89rwiyt4j9.wasm.gz",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-89rwiyt4j9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19392"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "89rwiyt4j9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WeatherApp1.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.pdb",
+      "Route": "_framework/WeatherApp1.4s5r5m8rle.pdb",
       "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70434,7 +70273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "38888"
+          "Value": "45720"
         },
         {
           "Name": "Content-Type",
@@ -70442,148 +70281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68=\""
+          "Value": "\"/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.pdb",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-w6ipu5wdv8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000035516409"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "28155"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.pdb.gz",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-w6ipu5wdv8.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "28155"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WeatherApp1.w6ipu5wdv8.pdb",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "38888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:57 GMT"
+          "Value": "Mon, 05 May 2025 08:11:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70593,7 +70295,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ipu5wdv8"
+          "Value": "4s5r5m8rle"
         },
         {
           "Name": "label",
@@ -70601,18 +70303,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68="
+          "Value": "sha256-/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw="
         }
       ]
     },
     {
-      "Route": "_framework/WeatherApp1.w6ipu5wdv8.pdb",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-w6ipu5wdv8.gz",
+      "Route": "_framework/WeatherApp1.4s5r5m8rle.pdb",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-4s5r5m8rle.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000035516409"
+          "Quality": "0.000030038148"
         }
       ],
       "ResponseHeaders": [
@@ -70622,15 +70324,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28155"
+          "Value": "33290"
         },
         {
           "Name": "ETag",
-          "Value": "\"IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4=\""
+          "Value": "\"Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70650,13 +70352,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68=\""
+          "Value": "W/\"/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ipu5wdv8"
+          "Value": "4s5r5m8rle"
         },
         {
           "Name": "label",
@@ -70664,13 +70366,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qIVtaGv9apjrb0qEHYZ8F1hPR/hwmaHjm2h3V/yMW68="
+          "Value": "sha256-/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw="
         }
       ]
     },
     {
-      "Route": "_framework/WeatherApp1.w6ipu5wdv8.pdb.gz",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-w6ipu5wdv8.gz",
+      "Route": "_framework/WeatherApp1.4s5r5m8rle.pdb.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-4s5r5m8rle.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70679,7 +70381,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28155"
+          "Value": "33290"
         },
         {
           "Name": "Content-Type",
@@ -70687,11 +70389,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4=\""
+          "Value": "\"Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70709,7 +70411,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "w6ipu5wdv8"
+          "Value": "4s5r5m8rle"
         },
         {
           "Name": "label",
@@ -70717,7 +70419,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IEFzGYyhsIjfcIdkc3UAqEqYRJpFUt3M2Zmx7CVDNM4="
+          "Value": "sha256-Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.52q0w55pmj.wasm",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "52q0w55pmj"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WeatherApp1.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.52q0w55pmj.wasm",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-52q0w55pmj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041844506"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "52q0w55pmj"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WeatherApp1.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.52q0w55pmj.wasm.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-52q0w55pmj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "52q0w55pmj"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WeatherApp1.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.pdb",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WeatherApp1.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.pdb",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-4s5r5m8rle.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000030038148"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33290"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Cx8n9qSbbTErZR6UU8h7ouHVoVxX6/ddNn/bkIVMYw="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WeatherApp1.pdb.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\q1am31oix8-4s5r5m8rle.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fo1fOEJhceWiir179aA2SZdutBpVmbFbv9xD5bpf18k="
         }
       ]
     },
@@ -70732,7 +70732,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "50453"
+          "Value": "65301"
         },
         {
           "Name": "Content-Type",
@@ -70740,11 +70740,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk=\""
+          "Value": "\"7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:57 GMT"
+          "Value": "Mon, 05 May 2025 08:11:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70754,18 +70754,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk="
+          "Value": "sha256-7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8="
         }
       ]
     },
     {
       "Route": "_framework/WeatherApp1.wasm",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-89rwiyt4j9.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-52q0w55pmj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000051564998"
+          "Quality": "0.000041844506"
         }
       ],
       "ResponseHeaders": [
@@ -70775,15 +70775,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19392"
+          "Value": "23897"
         },
         {
           "Name": "ETag",
-          "Value": "\"827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ=\""
+          "Value": "\"kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70803,19 +70803,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk=\""
+          "Value": "W/\"7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/DsTeTnpU71FK5j4javZGBTgDcUbUsvZF4sNutReTtk="
+          "Value": "sha256-7Wc7t18I3SwYsvLq3AUbjgRYuUx2f6wb6sXBdbnDu/8="
         }
       ]
     },
     {
       "Route": "_framework/WeatherApp1.wasm.gz",
-      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-89rwiyt4j9.gz",
+      "AssetFile": "R:\\MS full stack dev prof certification\\Full Stack Integration\\WeatherApp1\\obj\\Debug\\net9.0\\compressed\\p9o23j3pky-52q0w55pmj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70824,7 +70824,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19392"
+          "Value": "23897"
         },
         {
           "Name": "Content-Type",
@@ -70832,11 +70832,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ=\""
+          "Value": "\"kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:33:58 GMT"
+          "Value": "Mon, 05 May 2025 08:11:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70854,7 +70854,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-827YjJW1WBfSmA8JK9+TzGMKHi0Z6jVcI/f3cfPgLLQ="
+          "Value": "sha256-kyQviXqRivmAan0YAp2Kr59PGpANEsYpWLVqSIqRg8E="
         }
       ]
     },

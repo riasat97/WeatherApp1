@@ -1,0 +1,171 @@
+@page "/sharedstate"
+@inject WeatherApp1.Services.WeatherStateService StateService
+@implements IDisposable
+
+<h3>Shared State Demo</h3>
+
+<p>This component demonstrates how to use a shared state service to manage data across components.</p>
+
+<div class="mb-4">
+    <button class="btn btn-primary me-2" @onclick="FetchWeatherData">Fetch Weather Data</button>
+    <button class="btn btn-info me-2" @onclick="FetchUserData">Fetch User Data</button>
+</div>
+
+<div class="row">
+    <!-- Weather Data Display -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white d-flex justify-content-between">
+                <h5 class="mb-0">Weather Data</h5>
+                <small>Location: @StateService.CurrentLocation</small>
+            </div>
+            <div class="card-body">
+                @if (StateService.IsLoadingWeather)
+                {
+                    <div class="d-flex align-items-center">
+                        <div class="spinner-border text-primary me-2" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <span>Loading weather data...</span>
+                    </div>
+                }
+                else if (StateService.WeatherErrorMessage != null)
+                {
+                    <div class="alert alert-danger">
+                        @StateService.WeatherErrorMessage
+                    </div>
+                }
+                else if (StateService.WeatherData != null)
+                {
+                    <div class="d-flex align-items-center mb-3">
+                        @if (!string.IsNullOrEmpty(StateService.WeatherData.Current.Condition.Icon))
+                        {
+                            <img src="@($"https:{StateService.WeatherData.Current.Condition.Icon}")" alt="@StateService.WeatherData.Current.Condition.Text" class="me-3" style="width: 64px; height: 64px;" />
+                        }
+                        <div>
+                            <h4>@Math.Round(StateService.WeatherData.Current.TempC)°C</h4>
+                            <p class="mb-0">@StateService.WeatherData.Current.Condition.Text</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <p><strong>Feels like:</strong> @Math.Round(StateService.WeatherData.Current.FeelslikeC)°C</p>
+                            <p><strong>Wind:</strong> @Math.Round(StateService.WeatherData.Current.WindKph) kph</p>
+                        </div>
+                        <div class="col-6">
+                            <p><strong>Humidity:</strong> @StateService.WeatherData.Current.Humidity%</p>
+                            <p><strong>Updated:</strong> @StateService.WeatherData.Current.LastUpdated</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter city name..." @bind="newLocation" />
+                            <button class="btn btn-outline-primary" @onclick="ChangeLocation">Update Location</button>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <p>No weather data available. Click "Fetch Weather Data" to load data.</p>
+                }
+            </div>
+        </div>
+    </div>
+    
+    <!-- User Data Display -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">User Data</h5>
+            </div>
+            <div class="card-body">
+                @if (StateService.IsLoadingUsers)
+                {
+                    <div class="d-flex align-items-center">
+                        <div class="spinner-border text-info me-2" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <span>Loading user data...</span>
+                    </div>
+                }
+                else if (StateService.UsersErrorMessage != null)
+                {
+                    <div class="alert alert-danger">
+                        @StateService.UsersErrorMessage
+                    </div>
+                }
+                else if (StateService.UserData != null && StateService.UserData.Any())
+                {
+                    <div class="mb-2">
+                        <span class="badge bg-secondary">@StateService.UserData.Count users loaded</span>
+                    </div>
+                    
+                    <div class="list-group">
+                        @foreach (var user in StateService.UserData)
+                        {
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1">@user.Name</h6>
+                                    <small>@user.Email</small>
+                                </div>
+                                <p class="mb-1"><small>@user.Company.Name</small></p>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No user data available. Click "Fetch User Data" to load data.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string newLocation = "";
+    
+    protected override void OnInitialized()
+    {
+        // Subscribe to state changes
+        StateService.OnChange += StateHasChanged;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Initial data load
+        await StateService.FetchWeatherDataAsync();
+        await StateService.FetchUserDataAsync();
+    }
+
+    private async Task FetchWeatherData()
+    {
+        await StateService.FetchWeatherDataAsync();
+    }
+
+    private async Task FetchUserData()
+    {
+        // Generate a random limit between 1 and 10
+        Random random = new Random();
+        int limit = random.Next(1, 11);
+        
+        await StateService.FetchUserDataAsync(limit);
+    }
+    
+    private async Task ChangeLocation()
+    {
+        if (!string.IsNullOrWhiteSpace(newLocation))
+        {
+            await StateService.SetLocationAsync(newLocation);
+            newLocation = ""; // Clear the input field
+        }
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe to prevent memory leaks
+        StateService.OnChange -= StateHasChanged;
+    }
+} 
